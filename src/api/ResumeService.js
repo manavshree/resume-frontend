@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const baseURLl = "https://resume-ai-backend-final.onrender.com";
+export const baseURL = import.meta.env.VITE_API_URL;
 
 export const axiosInstance = axios.create({
-  baseURL: baseURLl,
+  baseURL: baseURL,
 });
 
 export const generateResume = async (description) => {
